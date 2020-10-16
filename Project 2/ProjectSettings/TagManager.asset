@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: HitBox
+    uniqueID: 321659203
+    locked: 0
+  - name: Notes
+    uniqueID: 3100226719
+    locked: 0
