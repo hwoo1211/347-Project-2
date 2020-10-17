@@ -575,16 +575,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notes:
-  - {fileID: 2014758418}
-  - {fileID: 454385985}
-  - {fileID: 247042355}
-  - {fileID: 2084282081}
+  - {fileID: 1337900659}
+  - {fileID: 1626148147}
+  - {fileID: 1299328684}
+  - {fileID: 910429938}
   points:
   - {fileID: 795436822}
   - {fileID: 596913630}
   - {fileID: 1879174404}
   - {fileID: 1213259080}
-  bpm: 1.1428572
+  HitBoxes:
+  - {fileID: 1337900660}
+  - {fileID: 1626148148}
+  - {fileID: 1299328685}
+  - {fileID: 910429939}
+  beat: 1.2
   timer: 0
 --- !u!4 &628225092
 Transform:
