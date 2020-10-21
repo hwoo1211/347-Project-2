@@ -28,6 +28,5 @@ public class ButtonHandler : MonoBehaviour
         {
             spRen.sprite = defaultButton;
         }
-
     }
 }
