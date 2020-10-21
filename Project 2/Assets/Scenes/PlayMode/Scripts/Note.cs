@@ -47,7 +47,7 @@ public class Note : MonoBehaviour
 
     void FixedUpdate()
     {
-        this.transform.position -= new Vector3(0.0f, beat * Time.deltaTime, 0.0f);
+        this.transform.position -= new Vector3(0.0f, beat * Time.deltaTime * 2f, 0.0f);
     }
 
     public void setBeat(float bt)

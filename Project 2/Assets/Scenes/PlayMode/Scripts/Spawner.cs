@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
     {
         startGame = false;
         endGame = false;
-        beat = (60f/135f * 2f);
+        beat = (60f/185f * 2f);
         note = new GameObject();
         aSource = GetComponent<AudioSource>();
         timer = 1.0f;
@@ -57,7 +57,7 @@ public class Spawner : MonoBehaviour
             }
             timer += Time.deltaTime;
 
-            if (aSource.time > clipLength - 10.0f)
+            if (aSource.time > clipLength - 20.0f)
             {
                 startGame = false;
                 endGame = true;
