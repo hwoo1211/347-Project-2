@@ -9,12 +9,17 @@ public class Note : MonoBehaviour
     public bool isHittable;
     public string color;
 
-    public KeyCode hitKey;
 
+    public bool isPaused;
+    public float offset;
+
+    public KeyCode hitKey;
 
     // Start is called before the first frame update
     void Start()
     {
+        isPaused = false;
+
         color = this.tag;
         switch (color)
         {
@@ -34,20 +39,36 @@ public class Note : MonoBehaviour
                 hitKey = KeyCode.K;
                 break;
         }
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {   
-        if(Input.GetKeyDown(hitKey) && isHittable)
+        if(Input.GetKey(hitKey) && isHittable)
         {
             Destroy(gameObject);
+            //game.incrementCombo();
+            theGame.game.incrementCombo();
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isPaused = (!isPaused) ?  true : false;
+        }
+
+
+
     }
 
     void FixedUpdate()
     {
-        this.transform.position -= new Vector3(0.0f, beat * Time.deltaTime * 2f, 0.0f);
+        offset = beat * Time.deltaTime * 2f;
+        if(isPaused)
+        {
+            offset = 0;
+        }
+        this.transform.position -= new Vector3(0.0f, offset , 0.0f);   
     }
 
     public void setBeat(float bt)
@@ -62,9 +83,15 @@ public class Note : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Hitbox")
+        if (collision.tag == "Hitbox")
         {
             isHittable = true;
+        }
+
+        if(collision.tag == "Buttons")
+        {
+            Destroy(gameObject);
+            theGame.game.resetCombo();
         }
     }
 
@@ -72,7 +99,7 @@ public class Note : MonoBehaviour
     {
         if (collision.tag == "Hitbox")
         {
-            isHittable = false;
+            isHittable = false;          
         }
     }
 }

@@ -56,9 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\PlayMode\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\Scenes\PlayMode\Scripts\VideoCamera.cs" />
     <Compile Include="Assets\Scenes\PlayMode\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scenes\PlayMode\Scripts\Note.cs" />
-    <Compile Include="Assets\Scenes\PlayMode\Scripts\VideoCamera.cs" />
+    <Compile Include="Assets\Scenes\PlayMode\Scripts\theGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

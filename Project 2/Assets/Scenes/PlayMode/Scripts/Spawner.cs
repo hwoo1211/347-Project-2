@@ -11,17 +11,18 @@ public class Spawner : MonoBehaviour
     public float timer;
     public bool startGame;
     public bool endGame;
+    public bool isPause;
     public float clipLength;
 
     private GameObject note;
     private AudioSource aSource;
     
-
     // Start is called before the first frame update
     void Start()
     {
         startGame = false;
         endGame = false;
+        isPause = false;
         beat = (60f/185f * 2f);
         note = new GameObject();
         aSource = GetComponent<AudioSource>();
@@ -39,7 +40,22 @@ public class Spawner : MonoBehaviour
             aSource.Play();
         }
 
-        if(startGame)
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isPause = (!isPause) ? true : false;
+        }
+
+        if (isPause)
+        {
+            aSource.Pause();
+        }
+        else
+        {
+            aSource.UnPause();
+        }
+       
+
+        if(startGame && !isPause)
         {
             int idx = Random.Range(0, 4);
             if (timer > beat)
@@ -52,6 +68,10 @@ public class Spawner : MonoBehaviour
 
                 note.AddComponent<BoxCollider2D>();
                 note.GetComponent<BoxCollider2D>().isTrigger = true;
+
+                note.AddComponent<Rigidbody2D>();
+                note.GetComponent<Rigidbody2D>().isKinematic = true;
+                note.GetComponent<Rigidbody2D>().useFullKinematicContacts = true;
 
                 timer -= beat;
             }
