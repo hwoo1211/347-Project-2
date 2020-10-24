@@ -16,14 +16,14 @@ public class Spawner : MonoBehaviour
 
     private GameObject note;
     private AudioSource aSource;
-    
+
     // Start is called before the first frame update
     void Start()
     {
         startGame = false;
         endGame = false;
         isPause = false;
-        beat = (60f/185f * 2f);
+        beat = (60f / 185f * 2f);
         note = new GameObject();
         aSource = GetComponent<AudioSource>();
         timer = 1.0f;
@@ -53,16 +53,15 @@ public class Spawner : MonoBehaviour
         {
             aSource.UnPause();
         }
-       
 
-        if(startGame && !isPause)
+        if (startGame && !isPause)
         {
             int idx = Random.Range(0, 4);
             if (timer > beat)
             {
-                note.AddComponent<Note>();          
+                note.AddComponent<Note>();
                 note.GetComponent<Note>().setBeat(beat);
-                
+
                 note = Instantiate(notes[idx], points[idx]);
                 note.transform.position = new Vector3(points[idx].position.x, points[idx].position.y, 2.0f);
 
@@ -83,6 +82,11 @@ public class Spawner : MonoBehaviour
                 endGame = true;
             }
         }
+
+        if(!aSource.isPlaying && endGame)
+        {
+            theGame.game.setEnd();
+        }
     }
 
     public void setBeat(float bt)
@@ -90,4 +94,3 @@ public class Spawner : MonoBehaviour
         beat = bt;
     }
 }
-

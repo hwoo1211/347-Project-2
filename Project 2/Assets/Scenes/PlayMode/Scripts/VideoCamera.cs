@@ -29,18 +29,23 @@ public class VideoCamera : MonoBehaviour
         {
             videoPlayer.Play();
             gameStart = true;
-        } 
+        }
 
-        if(isPause)
-        { 
+        if (isPause)
+        {
             videoPlayer.Pause();
         }
         else
         {
-            if(gameStart)
+            if (gameStart)
             {
                 videoPlayer.Play();
             }
+        }
+
+        if(gameStart && theGame.game.getEnd())
+        {
+            videoPlayer.Play();
         }
     }
 }

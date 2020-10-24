@@ -9,7 +9,6 @@ public class Note : MonoBehaviour
     public bool isHittable;
     public string color;
 
-
     public bool isPaused;
     public float offset;
 
@@ -39,14 +38,12 @@ public class Note : MonoBehaviour
                 hitKey = KeyCode.K;
                 break;
         }
-
-        
     }
 
     // Update is called once per frame
     void Update()
-    {   
-        if(Input.GetKey(hitKey) && isHittable)
+    {
+        if (Input.GetKey(hitKey) && isHittable)
         {
             Destroy(gameObject);
             //game.incrementCombo();
@@ -54,21 +51,18 @@ public class Note : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            isPaused = (!isPaused) ?  true : false;
+            isPaused = (!isPaused) ? true : false;
         }
-
-
-
     }
 
     void FixedUpdate()
     {
         offset = beat * Time.deltaTime * 2f;
-        if(isPaused)
+        if (isPaused)
         {
             offset = 0;
         }
-        this.transform.position -= new Vector3(0.0f, offset , 0.0f);   
+        this.transform.position -= new Vector3(0.0f, offset, 0.0f);
     }
 
     public void setBeat(float bt)
@@ -88,7 +82,7 @@ public class Note : MonoBehaviour
             isHittable = true;
         }
 
-        if(collision.tag == "Buttons")
+        if (collision.tag == "Buttons")
         {
             Destroy(gameObject);
             theGame.game.resetCombo();
@@ -99,7 +93,7 @@ public class Note : MonoBehaviour
     {
         if (collision.tag == "Hitbox")
         {
-            isHittable = false;          
+            isHittable = false;
         }
     }
 }

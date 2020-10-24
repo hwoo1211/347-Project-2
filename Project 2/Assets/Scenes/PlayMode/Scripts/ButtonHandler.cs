@@ -10,7 +10,6 @@ public class ButtonHandler : MonoBehaviour
     public Sprite pressedButton;
     public KeyCode pressKey;
 
-
     // Start is called before the first frame update
     void Start()
     {
