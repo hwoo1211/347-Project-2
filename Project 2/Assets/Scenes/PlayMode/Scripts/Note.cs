@@ -27,7 +27,7 @@ public class Note : MonoBehaviour
         //Vector3 compVec = new Vector3(0.0f, -8.0f, 0.0f);
 
         if (this.transform.position.y <= -8)
-            Destroy(this);
+            Destroy(this.gameObject);
     }
 
     public void setBeat(float bt)

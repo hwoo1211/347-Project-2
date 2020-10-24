@@ -25,8 +25,8 @@ public class Spawner : MonoBehaviour
         int idx = Random.Range(0, 4);
         if (timer > beat)
         {
-            note.AddComponent<Note>();
-            note.GetComponent<Note>().setBeat(beat);
+            //note.AddComponent<Note>();
+            //note.GetComponent<Note>().setBeat(beat);
             note = Instantiate(notes[idx], points[idx]);         
             note.transform.position = new Vector3(points[idx].position.x, points[idx].position.y, 2.0f);
 
