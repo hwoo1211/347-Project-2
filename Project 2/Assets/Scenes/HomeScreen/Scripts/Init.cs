@@ -10,6 +10,11 @@ public class Init : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+    }
+
+    private void Awake()
+    {
         int idx = Random.Range(0, 3);
         VideoClip toPlay = clips[idx];
         player = GameObject.Find("Background").GetComponent<VideoPlayer>();

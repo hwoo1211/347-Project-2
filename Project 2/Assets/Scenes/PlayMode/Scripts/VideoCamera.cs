@@ -15,6 +15,10 @@ public class VideoCamera : MonoBehaviour
         videoPlayer = gameObject.GetComponent<VideoPlayer>();
         videoPlayer.playOnAwake = false;
         videoPlayer.Pause();
+
+        GameObject obj = GameObject.Find("SongConfig");
+        VideoClip vClip = obj.GetComponent<Configs>().getVideo();
+        videoPlayer.clip = vClip;
     }
 
     // Update is called once per frame

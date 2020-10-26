@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class Configs : MonoBehaviour
 {
@@ -9,6 +10,22 @@ public class Configs : MonoBehaviour
 
     static int bpm;
     static string title;
+    static AudioClip aClip;
+    static VideoClip vClip;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this);
+
+        if (config == null)
+        {
+            config = this;
+        }
+        else
+        {
+            DestroyObject(gameObject);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +33,8 @@ public class Configs : MonoBehaviour
         config = this;
         bpm = 0;
         title = "";
+        aClip = null;
+        vClip = null;
     }
 
     // Update is called once per frame
@@ -46,4 +65,25 @@ public class Configs : MonoBehaviour
     {
         return title;
     }
+
+    public void setAudio(AudioClip audio)
+    {
+        Configs.aClip = audio;
+    }
+
+    public AudioClip getAudio()
+    {
+        return Configs.aClip;
+    }
+
+    public void setVideo(VideoClip video)
+    {
+        Configs.vClip = video;
+    }
+
+    public VideoClip getVideo()
+    {
+        return Configs.vClip;
+    }
+
 }

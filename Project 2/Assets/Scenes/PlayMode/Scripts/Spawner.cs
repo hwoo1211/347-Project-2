@@ -16,16 +16,22 @@ public class Spawner : MonoBehaviour
 
     private GameObject note;
     private AudioSource aSource;
+    private GameObject songConfig;
 
     // Start is called before the first frame update
     void Start()
     {
+        songConfig = GameObject.Find("SongConfig");
+        float bpm = songConfig.GetComponent<Configs>().getBpm();
+        string title = songConfig.GetComponent<Configs>().getTitle();
+
         startGame = false;
         endGame = false;
         isPause = false;
-        beat = (60f / 185f * 2f);
+        beat = (60f / (float)bpm * 2f);
         note = new GameObject();
         aSource = GetComponent<AudioSource>();
+        aSource.clip = songConfig.GetComponent<Configs>().getAudio();
         timer = 1.0f;
         clipLength = aSource.clip.length;
     }

@@ -320,6 +320,8 @@ Assets\Scenes\HomeScreen\Scripts\Init.cs
 Assets\Scenes\HomeScreen\Scripts\SongSelection.cs
 Assets\Scenes\PlayMode\Scripts\ButtonHandler.cs
 Assets\Scenes\PlayMode\Scripts\Note.cs
+Assets\Scenes\PlayMode\Scripts\Points.cs
+Assets\Scenes\PlayMode\Scripts\Score.cs
 Assets\Scenes\PlayMode\Scripts\Spawner.cs
 Assets\Scenes\PlayMode\Scripts\VideoCamera.cs
 Assets\Scenes\PlayMode\Scripts\theGame.cs
