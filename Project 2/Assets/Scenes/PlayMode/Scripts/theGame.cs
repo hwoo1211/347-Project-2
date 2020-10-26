@@ -48,6 +48,7 @@ public class theGame : MonoBehaviour
         menuButton = GameObject.Find("MenuButton").GetComponent<UnityEngine.UI.Button>();
 
         restartButton.onClick.AddListener(restart);
+        menuButton.onClick.AddListener(backToMenu);
 
         isPaused = false;
         game = this;
@@ -151,5 +152,10 @@ public class theGame : MonoBehaviour
     private void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void backToMenu()
+    {
+        SceneManager.LoadScene("HomeScreen");
     }
 }
