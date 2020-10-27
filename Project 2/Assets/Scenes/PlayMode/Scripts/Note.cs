@@ -46,8 +46,6 @@ public class Note : MonoBehaviour
         if (Input.GetKey(hitKey) && isHittable)
         {
             Destroy(gameObject);
-            //game.incrementCombo();
-            theGame.game.incrementCombo();
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -85,7 +83,6 @@ public class Note : MonoBehaviour
         if (collision.tag == "Buttons")
         {
             Destroy(gameObject);
-            theGame.game.resetCombo();
         }
     }
 

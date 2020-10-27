@@ -28,8 +28,8 @@ public class Score : MonoBehaviour
         }
         totalPoints += multiplier++ * point;
         scoreText.text = totalPoints.ToString("000");
-        
-        
+        theGame.game.incrementCombo();
+
     }
 
     public void MissScore()
@@ -38,5 +38,6 @@ public class Score : MonoBehaviour
         totalPoints -= point;
         multiplier = 1;
         scoreText.text = totalPoints.ToString("000");
+        theGame.game.resetCombo();
     }
 }

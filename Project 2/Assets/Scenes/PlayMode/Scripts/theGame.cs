@@ -51,6 +51,7 @@ public class theGame : MonoBehaviour
         menuButton.onClick.AddListener(backToMenu);
 
         isPaused = false;
+
         game = this;
         comboNumber = 0;
         comboText = GameObject.Find("ComboNumber").GetComponent<Text>();
