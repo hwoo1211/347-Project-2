@@ -4,16 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 6609894105642088411
-    second: GoodEffect
+    second: effects_0
   - first:
       213: 1957107745717523172
-    second: HitEffect
+    second: effects_1
   - first:
       213: -3914910146244942373
-    second: PerfectEffect
+    second: effects_2
   - first:
       213: -1166211891172804109
-    second: MissEffect
+    second: effects_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,7 +101,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GoodEffect
+      name: effects_0
       rect:
         serializedVersion: 2
         x: 1
@@ -122,7 +122,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HitEffect
+      name: effects_1
       rect:
         serializedVersion: 2
         x: 1
@@ -143,7 +143,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PerfectEffect
+      name: effects_2
       rect:
         serializedVersion: 2
         x: 1
@@ -164,7 +164,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MissEffect
+      name: effects_3
       rect:
         serializedVersion: 2
         x: 1

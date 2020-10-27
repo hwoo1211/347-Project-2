@@ -4,30 +4,65 @@ using UnityEngine;
 
 public class Note : MonoBehaviour
 {
-    public Transform[] points;
     public float beat;
     public float speed;
+    public bool isHittable;
+    public string color;
+
+    public bool isPaused;
+    public float offset;
+
+    public KeyCode hitKey;
 
     // Start is called before the first frame update
     void Start()
     {
-        //beat = 60f / 130f * 2f;
+        isPaused = false;
+
+        color = this.tag;
+        switch (color)
+        {
+            case "Yellow":
+                hitKey = KeyCode.D;
+                break;
+
+            case "Green":
+                hitKey = KeyCode.F;
+                break;
+
+            case "Red":
+                hitKey = KeyCode.J;
+                break;
+
+            case "Blue":
+                hitKey = KeyCode.K;
+                break;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(hitKey) && isHittable)
+        {
+            Destroy(gameObject);
+            //game.incrementCombo();
+            theGame.game.incrementCombo();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isPaused = (!isPaused) ? true : false;
+        }
     }
 
     void FixedUpdate()
     {
-        this.transform.position -= new Vector3(0.0f, beat * Time.deltaTime, 0.0f);
-
-        //Vector3 compVec = new Vector3(0.0f, -8.0f, 0.0f);
-
-        if (this.transform.position.y <= -8)
-            Destroy(this.gameObject);
+        offset = beat * Time.deltaTime * 2f;
+        if (isPaused)
+        {
+            offset = 0;
+        }
+        this.transform.position -= new Vector3(0.0f, offset, 0.0f);
     }
 
     public void setBeat(float bt)
@@ -38,5 +73,27 @@ public class Note : MonoBehaviour
     float getBeat()
     {
         return beat;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Hitbox")
+        {
+            isHittable = true;
+        }
+
+        if (collision.tag == "Buttons")
+        {
+            Destroy(gameObject);
+            theGame.game.resetCombo();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Hitbox")
+        {
+            isHittable = false;
+        }
     }
 }

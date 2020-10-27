@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hitbox
+  - Green
+  - Red
+  - Blue
+  - Yellow
+  - Buttons
+  - 1
+  - 2
+  - 3
   layers:
   - Default
   - TransparentFX

@@ -1,20 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class SongSelection : MonoBehaviour
 {
+
+    public GameObject playB;
+    public GameObject mainCanvas;
+    
     // Start is called before the first frame update
     void Start()
     {
-        this.gameObject.SetActive(false);
+        playB.SetActive(false);
     }
 
     public void PlayGame()
     {
-        // Suggestion: Use SceneManager.MoveGameObjectToScene() to add song info to PlayMode Scene
+        //SceneManager.MoveGameObjectToScene();
+        mainCanvas.SetActive(false);
         SceneManager.LoadScene("PlayMode");
     }
 
