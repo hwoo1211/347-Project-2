@@ -4,7 +4,6 @@ public class Points : MonoBehaviour
 {
     public ButtonHandler MyButton;
     public Score Score;
-    public Spawner spawner;
 
     private bool objIn;
     private int kDown;
@@ -13,21 +12,18 @@ public class Points : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objIn = false;  // Note Object is in Contact
-        kDown = 0;      // key is up
+        objIn = false;
+        kDown = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!spawner.isPause && spawner.startGame && !spawner.endGame && Input.GetKeyDown(MyButton.pressKey))
+        if (Input.GetKeyDown(MyButton.pressKey) && (kDown == 0))
         {
-            if (kDown == 0)
-            {
-                kDown = 1;  // key is down
-                Count();
-            }
-            
+            kDown = 1;
+            Count();
+
         }
         else
         {
@@ -42,23 +38,18 @@ public class Points : MonoBehaviour
     {
         if (kDown == 1)
         {
-            
+
             if (objIn)
             {
                 Score.AddScore();
                 objIn = false;
-                if (coll)
-                    Destroy(coll.gameObject);
-
+                Destroy(coll.gameObject);
             }
+                
             else
                 Score.MissScore();
-            
-
-
         }
         
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

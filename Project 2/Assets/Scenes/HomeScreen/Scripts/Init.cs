@@ -13,15 +13,15 @@ public class Init : MonoBehaviour
         
     }
 
-    //private void Awake()
-    //{
-    //    int idx = Random.Range(0, 3);
-    //    VideoClip toPlay = clips[idx];
-    //    player = GameObject.Find("Background").GetComponent<VideoPlayer>();
-    //    player.clip = toPlay;
-    //    player.isLooping = true;
-    //    player.Play();
-    //}
+    private void Awake()
+    {
+        int idx = Random.Range(0, 3);
+        VideoClip toPlay = clips[idx];
+        player = GameObject.Find("Background").GetComponent<VideoPlayer>();
+        player.clip = toPlay;
+        player.isLooping = true;
+        player.Play();
+    }
 
     // Update is called once per frame
     void Update()

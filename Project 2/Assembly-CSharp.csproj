@@ -47,7 +47,10 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
+<<<<<<< HEAD
     <UnityProjectGeneratorVersion>2.0.3</UnityProjectGeneratorVersion>
+=======
+>>>>>>> parent of 034e427... Fixed Scene Transition and Animation Positioning
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.1.5f1</UnityVersion>
@@ -61,7 +64,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scenes\PlayMode\Scripts\Score.cs" />
+=======
+>>>>>>> parent of 034e427... Fixed Scene Transition and Animation Positioning
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -80,7 +86,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scenes\PlayMode\Scripts\Points.cs" />
+=======
+>>>>>>> parent of 034e427... Fixed Scene Transition and Animation Positioning
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scenes\HomeScreen\Scripts\Init.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
@@ -103,6 +112,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scenes\HomeScreen\Scripts\AlbumCoverChange.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scenes\PlayMode\Scripts\Points.cs" />
+    <Compile Include="Assets\Scenes\PlayMode\Scripts\Score.cs" />
+>>>>>>> parent of 034e427... Fixed Scene Transition and Animation Positioning
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
