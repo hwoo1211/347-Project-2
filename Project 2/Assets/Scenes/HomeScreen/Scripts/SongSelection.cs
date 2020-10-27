@@ -8,16 +8,19 @@ using UnityEngine.UI;
 public class SongSelection : MonoBehaviour
 {
 
-    public GameObject obj;
+    public GameObject playB;
+    public GameObject mainCanvas;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        playB.SetActive(false);
     }
 
     public void PlayGame()
-    {        
+    {
+        //SceneManager.MoveGameObjectToScene();
+        mainCanvas.SetActive(false);
         SceneManager.LoadScene("PlayMode");
     }
 

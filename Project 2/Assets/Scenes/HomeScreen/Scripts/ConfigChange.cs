@@ -34,7 +34,7 @@ public class ConfigChange : MonoBehaviour
                 Configs.config.setTitle("cosmo");
                 break;
             case "3":
-                Configs.config.setBpm (155);
+                Configs.config.setBpm (150);
                 Configs.config.setTitle("flowering");
                 break;
         }

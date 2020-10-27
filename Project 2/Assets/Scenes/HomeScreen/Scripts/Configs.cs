@@ -23,7 +23,7 @@ public class Configs : MonoBehaviour
         }
         else
         {
-            DestroyObject(gameObject);
+            Destroy(gameObject);
         }
     }
     // Start is called before the first frame update
