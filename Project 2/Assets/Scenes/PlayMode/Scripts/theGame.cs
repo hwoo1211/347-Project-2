@@ -82,7 +82,7 @@ public class theGame : MonoBehaviour
             changePauseStatus();
         }
 
-        if (isPaused)
+        if (isPaused && !isEnd)
         {
             PausePanel.gameObject.SetActive(true);
         }

@@ -13,6 +13,12 @@ public class AlbumCoverChange : MonoBehaviour
         img.SetActive(false);
         GameObject songPanel = GameObject.Find("SongSelectWindow");
         songPanel.SetActive(false);
+
+        GameObject creditsPanel = GameObject.Find("CreditsWindow");
+        creditsPanel.SetActive(false);
+
+        GameObject helpPanel = GameObject.Find("HelpWindow");
+        helpPanel.SetActive(false);
     }
 
     // Update is called once per frame

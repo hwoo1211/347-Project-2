@@ -27,15 +27,21 @@ public class ConfigChange : MonoBehaviour
         {
             case "1":
                 Configs.config.setBpm(185);
-                Configs.config.setTitle("123");               
+                Configs.config.setTitle("123");
+                Configs.config.setOffset(1);
+                Configs.config.setStretch(1.0f);
                 break;
             case "2":
                 Configs.config.setBpm(180);
                 Configs.config.setTitle("cosmo");
+                Configs.config.setOffset(1);
+                Configs.config.setStretch(1.0f);
                 break;
             case "3":
                 Configs.config.setBpm (150);
                 Configs.config.setTitle("flowering");
+                Configs.config.setOffset(1);
+                Configs.config.setStretch(1.0f);
                 break;
             case "4":
                 Configs.config.setBpm(300);

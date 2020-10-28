@@ -51,7 +51,7 @@ public class Spawner : MonoBehaviour
             isPause = (!isPause) ? true : false;
         }
 
-        if (isPause)
+        if (isPause && !theGame.game.getEnd())
         {
             aSource.Pause();
         }
