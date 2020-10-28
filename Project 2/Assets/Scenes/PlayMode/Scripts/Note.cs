@@ -14,9 +14,15 @@ public class Note : MonoBehaviour
 
     public KeyCode hitKey;
 
+    private GameObject songConfig;
+    private int off;
+
     // Start is called before the first frame update
     void Start()
     {
+        songConfig = GameObject.Find("SongConfig");
+        off = songConfig.GetComponent<Configs>().getOffset();
+
         isPaused = false;
 
         color = this.tag;
@@ -55,7 +61,7 @@ public class Note : MonoBehaviour
 
     void FixedUpdate()
     {
-        offset = beat * Time.deltaTime * 2f;
+        offset = beat * Time.deltaTime * 2f * off;
         if (isPaused)
         {
             offset = 0;

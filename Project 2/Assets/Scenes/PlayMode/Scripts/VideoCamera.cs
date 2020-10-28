@@ -19,6 +19,11 @@ public class VideoCamera : MonoBehaviour
         GameObject obj = GameObject.Find("SongConfig");
         VideoClip vClip = obj.GetComponent<Configs>().getVideo();
         videoPlayer.clip = vClip;
+
+        videoPlayer.SetDirectAudioMute(0, true);
+
+        float stretch = obj.GetComponent<Configs>().getStretch();
+        videoPlayer.playbackSpeed = stretch;
     }
 
     // Update is called once per frame

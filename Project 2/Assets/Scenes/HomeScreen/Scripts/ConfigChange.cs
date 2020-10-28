@@ -37,6 +37,12 @@ public class ConfigChange : MonoBehaviour
                 Configs.config.setBpm (150);
                 Configs.config.setTitle("flowering");
                 break;
+            case "4":
+                Configs.config.setBpm(300);
+                Configs.config.setTitle("adele");
+                Configs.config.setOffset(3);
+                Configs.config.setStretch(0.92f);
+                break;
         }
         Configs.config.setAudio(aClip);
         Configs.config.setVideo(vClip);
