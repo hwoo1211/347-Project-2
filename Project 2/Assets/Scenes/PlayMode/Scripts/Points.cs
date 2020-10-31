@@ -33,39 +33,26 @@ public class Points : MonoBehaviour
         {
             kDown = 0;
         }
-            
-
-        
     }
 
     private void Count()
     {
         if (kDown == 1)
         {
-            
             if (objIn)
             {
                 Score.AddScore();
                 objIn = false;
                 if (coll)
                     Destroy(coll.gameObject);
-
             }
-            else
-                Score.MissScore();
-            
-
-
         }
-        
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         objIn = true;
         coll = collision;
-        //print("Entering: " + collision.gameObject.name);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -75,8 +62,5 @@ public class Points : MonoBehaviour
             coll = null;
             Score.MissScore();
         }
-        
-
     }
-
 }

@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -19,12 +18,17 @@ public class VideoCamera : MonoBehaviour
         GameObject obj = GameObject.Find("SongConfig");
         VideoClip vClip = obj.GetComponent<Configs>().getVideo();
         videoPlayer.clip = vClip;
+
+        videoPlayer.SetDirectAudioMute(0, true);
+
+        float stretch = obj.GetComponent<Configs>().getStretch();
+        videoPlayer.playbackSpeed = stretch;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)) 
         {
             isPause = (!isPause) ? true : false;
         }

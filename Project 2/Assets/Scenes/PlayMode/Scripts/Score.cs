@@ -27,9 +27,9 @@ public class Score : MonoBehaviour
                 break;
         }
         totalPoints += multiplier++ * point;
-        scoreText.text = totalPoints.ToString("000");
-        
-        
+        scoreText.text = totalPoints.ToString();
+        theGame.game.incrementCombo();
+
     }
 
     public void MissScore()
@@ -37,6 +37,7 @@ public class Score : MonoBehaviour
         animator.Play("MissAni");
         totalPoints -= point;
         multiplier = 1;
-        scoreText.text = totalPoints.ToString("000");
+        scoreText.text = totalPoints.ToString();
+        theGame.game.resetCombo();
     }
 }

@@ -12,6 +12,8 @@ public class Configs : MonoBehaviour
     static string title;
     static AudioClip aClip;
     static VideoClip vClip;
+    static int offset;
+    static float stretch;
 
     void Awake()
     {
@@ -35,6 +37,8 @@ public class Configs : MonoBehaviour
         title = "";
         aClip = null;
         vClip = null;
+        offset = 1;
+        stretch = 1.0f;
     }
 
     // Update is called once per frame
@@ -84,6 +88,26 @@ public class Configs : MonoBehaviour
     public VideoClip getVideo()
     {
         return Configs.vClip;
+    }
+
+    public void setOffset(int off)
+    {
+        Configs.offset = off;
+    }
+
+    public int getOffset()
+    {
+        return Configs.offset;
+    }
+
+    public void setStretch(float str)
+    {
+        Configs.stretch = str;
+    }
+
+    public float getStretch()
+    {
+        return Configs.stretch;
     }
 
 }

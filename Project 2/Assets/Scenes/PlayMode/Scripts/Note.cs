@@ -14,9 +14,15 @@ public class Note : MonoBehaviour
 
     public KeyCode hitKey;
 
+    private GameObject songConfig;
+    private int off;
+
     // Start is called before the first frame update
     void Start()
     {
+        songConfig = GameObject.Find("SongConfig");
+        off = songConfig.GetComponent<Configs>().getOffset();
+
         isPaused = false;
 
         color = this.tag;
@@ -46,8 +52,6 @@ public class Note : MonoBehaviour
         if (Input.GetKey(hitKey) && isHittable)
         {
             Destroy(gameObject);
-            //game.incrementCombo();
-            theGame.game.incrementCombo();
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -57,7 +61,7 @@ public class Note : MonoBehaviour
 
     void FixedUpdate()
     {
-        offset = beat * Time.deltaTime * 2f;
+        offset = beat * Time.deltaTime * 2f * off;
         if (isPaused)
         {
             offset = 0;
@@ -85,7 +89,6 @@ public class Note : MonoBehaviour
         if (collision.tag == "Buttons")
         {
             Destroy(gameObject);
-            theGame.game.resetCombo();
         }
     }
 

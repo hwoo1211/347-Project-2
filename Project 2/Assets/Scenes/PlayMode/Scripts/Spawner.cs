@@ -51,7 +51,7 @@ public class Spawner : MonoBehaviour
             isPause = (!isPause) ? true : false;
         }
 
-        if (isPause)
+        if (isPause && !theGame.game.getEnd())
         {
             aSource.Pause();
         }
@@ -63,7 +63,7 @@ public class Spawner : MonoBehaviour
         if (startGame && !isPause)
         {
             int idx = Random.Range(0, 4);
-            if (timer > beat)
+            if (timer > beat && aSource.time < clipLength - 46.0f)
             {
                 note.AddComponent<Note>();
                 note.GetComponent<Note>().setBeat(beat);
@@ -82,16 +82,19 @@ public class Spawner : MonoBehaviour
             }
             timer += Time.deltaTime;
 
-            if (aSource.time > clipLength - 20.0f)
+            if (aSource.time > clipLength - 40.0f)
             {
                 startGame = false;
                 endGame = true;
+                timer = 5000.0f;
+                theGame.game.setEnd();
             }
         }
 
-        if(!aSource.isPlaying && endGame)
+        if(theGame.game.getEnd())
         {
-            theGame.game.setEnd();
+            theGame.game.calculatePercentage();
+            theGame.game.activateResults();
         }
     }
 
