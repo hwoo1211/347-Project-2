@@ -42,6 +42,7 @@ public class Spawner : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && !startGame && !endGame)
         {
+            GameObject.Find("BeginText").SetActive(false);
             startGame = true;
             aSource.Play();
         }

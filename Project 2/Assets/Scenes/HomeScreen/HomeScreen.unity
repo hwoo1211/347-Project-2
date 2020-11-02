@@ -427,8 +427,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11.149963, y: -10}
-  m_SizeDelta: {x: -32.3, y: -80}
+  m_AnchoredPosition: {x: -11.149963, y: 0}
+  m_SizeDelta: {x: -32.3, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &31705360
 MonoBehaviour:
@@ -843,8 +843,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -15, y: 0}
-  m_SizeDelta: {x: 10, y: -20}
+  m_AnchoredPosition: {x: -15, y: 25}
+  m_SizeDelta: {x: 10, y: -70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &100305744
 MonoBehaviour:
@@ -887,9 +887,9 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1583844541}
   m_HandleRect: {fileID: 1583844540}
-  m_Direction: 3
+  m_Direction: 2
   m_Value: 1
-  m_Size: 0.4568421
+  m_Size: 0.16842102
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1106,13 +1106,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 212613846}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 35
   m_Viewport: {fileID: 31705359}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1265586791}
@@ -1428,7 +1428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -15, y: 25}
+  m_AnchoredPosition: {x: -25, y: 25}
   m_SizeDelta: {x: 133.2, y: 60.3}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &237956254
@@ -1595,15 +1595,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: How To Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1950bd9bbd9d3064b8166f55bd9c7c58, type: 2}
+  m_sharedMaterial: {fileID: 7851703985065509272, guid: 1950bd9bbd9d3064b8166f55bd9c7c58, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284177243
+  m_fontColor: {r: 0.35686275, g: 0.35686275, b: 0.35686275, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1620,7 +1620,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.15
+  m_fontSize: 24
   m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2129,10 +2129,10 @@ MonoBehaviour:
   m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
-  m_Elasticity: 0.1
+  m_Elasticity: 0
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 35
   m_Viewport: {fileID: 500811445}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 686684587}
@@ -2719,10 +2719,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Simply press your keyboard to the beat!
+  m_text: Simply Press Your Keyboard To The Beat!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1950bd9bbd9d3064b8166f55bd9c7c58, type: 2}
+  m_sharedMaterial: {fileID: 7851703985065509272, guid: 1950bd9bbd9d3064b8166f55bd9c7c58, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2746,14 +2746,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 36
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 36
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 32
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2832,8 +2832,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11.149963, y: -10}
-  m_SizeDelta: {x: -32.3, y: -80}
+  m_AnchoredPosition: {x: -11.149963, y: 0}
+  m_SizeDelta: {x: -32.3, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &500811446
 MonoBehaviour:
@@ -3053,10 +3053,10 @@ RectTransform:
   m_Father: {fileID: 155089341}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 382, y: 0}
-  m_SizeDelta: {x: 421.4765, y: 377.28772}
+  m_AnchorMin: {x: 0.75, y: 0.5}
+  m_AnchorMax: {x: 0.75, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595374640
 MonoBehaviour:
@@ -3204,10 +3204,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1. Choose a song to play.\n2. Click on \"Play\" button on the bottom right\n3.
-    Press on Space key when you're ready. \n4. Notes will start to fall down with
-    the music. Hit the notes when they overlap the hitbox. \n5. The key bindings
-    are fixed as the following.\n\tYellow - \"D\" Key\n\tGreen - \"F\" Key\n\tRed
+  m_text: "\n1. Choose a song to play.\n2. Click on \"Play\" button on the bottom
+    right\n3. Press on Space key when you're ready. \n4. Notes will start to fall
+    down with the music. Hit the notes when they overlap the hitbox. \n5. The key
+    bindings are fixed as the following.\n\tYellow - \"D\" Key\n\tGreen - \"F\" Key\n\tRed
     - \"J\" Key\n\tBlue - \"K\" Key\n6. Have fun, good luck!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3235,13 +3235,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -3465,8 +3465,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -15, y: 0}
-  m_SizeDelta: {x: 10, y: -20}
+  m_AnchoredPosition: {x: -15, y: 25}
+  m_SizeDelta: {x: 10, y: -70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &686684587
 MonoBehaviour:
@@ -3509,7 +3509,7 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1554770245}
   m_HandleRect: {fileID: 1554770244}
-  m_Direction: 3
+  m_Direction: 2
   m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
@@ -3613,15 +3613,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1950bd9bbd9d3064b8166f55bd9c7c58, type: 2}
+  m_sharedMaterial: {fileID: 7851703985065509272, guid: 1950bd9bbd9d3064b8166f55bd9c7c58, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284177243
+  m_fontColor: {r: 0.35686275, g: 0.35686275, b: 0.35686275, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4232,15 +4232,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1950bd9bbd9d3064b8166f55bd9c7c58, type: 2}
+  m_sharedMaterial: {fileID: 7851703985065509272, guid: 1950bd9bbd9d3064b8166f55bd9c7c58, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284177243
+  m_fontColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4263,7 +4263,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
   m_fontSizeMax: 24
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5179,8 +5179,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11.149963, y: -10}
-  m_SizeDelta: {x: -32.3, y: -80}
+  m_AnchoredPosition: {x: -11.149963, y: 0}
+  m_SizeDelta: {x: -32.3, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261481631
 MonoBehaviour:
@@ -5269,8 +5269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -15, y: 0}
-  m_SizeDelta: {x: 10, y: -20}
+  m_AnchoredPosition: {x: -15, y: 25}
+  m_SizeDelta: {x: 10, y: -70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1265586791
 MonoBehaviour:
@@ -5313,9 +5313,9 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1305400063}
   m_HandleRect: {fileID: 1305400062}
-  m_Direction: 3
-  m_Value: 0
-  m_Size: 1
+  m_Direction: 2
+  m_Value: 1
+  m_Size: 0.6808509
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6741,7 +6741,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6925,7 +6925,7 @@ Camera:
   m_GameObject: {fileID: 1616178608}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -7767,18 +7767,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809260211}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -31.1711}
+  m_LocalPosition: {x: 0, y: 0, z: -31.171112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 277886788}
   m_Father: {fileID: 656329533}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -378, y: -10}
-  m_SizeDelta: {x: 100, y: 40}
-  m_Pivot: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 10, y: -30}
+  m_SizeDelta: {x: 150, y: 40}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1809260213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7833,6 +7833,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 656329532}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1809260214
 MonoBehaviour:
@@ -8337,7 +8349,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.38431373}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.38431373}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -8606,18 +8618,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961154968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -31.1711}
+  m_LocalPosition: {x: 0, y: 0, z: -31.171112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 728548542}
   m_Father: {fileID: 656329533}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13, y: -439}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 10, y: 60}
   m_SizeDelta: {x: 100, y: 40}
-  m_Pivot: {x: 1, y: 1}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1961154970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8672,6 +8684,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 656329532}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1961154971
 MonoBehaviour:
@@ -8981,10 +9005,10 @@ MonoBehaviour:
   m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
-  m_Elasticity: 0.1
+  m_Elasticity: 0.3
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 35
   m_Viewport: {fileID: 1261481630}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 100305744}
